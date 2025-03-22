@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="icon" type="image/x-icon" href="./icon1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <section id="header">
+        <a href="#" class="text-logo">Ec<span>🌍</span>cean</a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><button id="login-btn">Login</button></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <!-- Modal for Login -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: #088178;">Login</h2>
+            <form action="#">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <button id="login-btn" type="submit">Login</button>
+            </form>
+            <p style="color: #088178;">Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+        </div>
+    </div>
+
+    <!-- Modal for Signup -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: #088178;">Sign Up</h2>
+            <form action="#">
+                <label for="newusername">Username:</label><br>
+                <input type="text" id="newusername" name="newusername" required><br><br>
+                <label for="newemail">Email:</label><br>
+                <input type="text" id="newemail" name="newemail" required><br><br>
+                <label for="newpassword">Password:</label><br>
+                <input type="password" id="newpassword" name="newpassword" required><br><br>
+                <button id="login-btn" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+
+    <section id="hero">
+        <h4>Shop-only-sustainable</h4>
+        <h2>" Buy Smart</h2>
+        <h1>Play your Part"</h1>
+        <p>Save more with coupon codes & up to 70% off!</p>
+        <button id="shopNowBtn">Shop Now</button>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/feature/f1.png" alt="">
+            <h6>Trees Planted</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/feature/f2.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/feature/f4.png" alt="">
+            <h6>Recycling</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/feature/f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/feature/f6.png" alt="">
+            <h6>CO<sup>2</sup> Reduction</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/feature/f5.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Eco-Friendly Products</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='product1.html';">
+                <img src="img/product/b1.jpg" alt="">
+                <div class="des">
+                    <span>Baggit</span>
+                    <h5>Khaki Beige Buoy Tote Bag</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$9</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product2.html';">
+                <img src="img/product/j1.jpg" alt="">
+                <div class="des">
+                    <span>Bunaai</span>
+                    <h5> uniquely handcrafted Bunaai Temptation</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$13</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product3.html';">
+                <img src="img/product/l4.jpg" alt="">
+                <div class="des">
+                    <span>Brown Living</span>
+                    <h5>Table Lamp for Bedroom</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$21</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product4.html';">
+                <img src="img/product/c2.jpg" alt="">
+                <div class="des">
+                    <span>Baby Moo</span>
+                    <h5>Coral Coconut Wooden Baby Crib</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$334</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product5.html';">
+                <img src="img/product/f3.jpg" alt="">
+                <div class="des">
+                    <span>Soultree</span>
+                    <h5>Kumkumadi Youthful Radiance Facial Oil</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$5</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product6.html';">
+                <img src="img/product/t5.jpg" alt="">
+                <div class="des">
+                    <span>No Nasties</span>
+                    <h5>Viola Short-Sleeve t-Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$15</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product7.html';">
+                <img src="img/product/bb7.jpg" alt="">
+                <div class="des">
+                    <span>Bamboo india</span>
+                    <h5>hair brush crafted from sustainable</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$7</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product8.html';">
+                <img src="img/product/s4.jpg" alt="">
+                <div class="des">
+                    <span>Neeman's</span>
+                    <h5>Vibrant comfortable Eco-Friendly Shoes</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$59</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>70% off</span> - All t-Shirts & Accessories</h2>
+        <button class="normal" id="exploreNowBtn">Explore More</button>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>New Arrivals</h2>
+        <p>Fresh Arrivals for you, eco-friendly and true</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='product9.html';">
+                <img src="img/product/tt3.jpg" alt="">
+                <div class="des">
+                    <span>Doodlage</span>
+                    <h5>Organic cotton, fashionable t-shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$16</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product10.html';">
+                <img src="img/product/ss1.jpg" alt="">
+                <div class="des">
+                    <span>Earthy Soles</span>
+                    <h5>Elegant & stylish, just like you</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$19</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product11.html';">
+                <img src="img/product/w2.jpg" alt="">
+                <div class="des">
+                    <span>EcoRight</span>
+                    <h5>Elegant leather money bag for men</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$17</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product12.html';">
+                <img src="img/product/bb3.jpg" alt="">
+                <div class="des">
+                    <span>BambuHome</span>
+                    <h5>bamboo brush for sustainable oral care</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$3</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product13.html';">
+                <img src="img/product/f4.jpg" alt="">
+                <div class="des">
+                    <span>Biotique</span>
+                    <h5>Revitalizing face oil for radiant skin</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$8</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product14.html';">
+                <img src="img/product/je1.jpg" alt="">
+                <div class="des">
+                    <span>Bhumi</span>
+                    <h5>stylish jeans with a perfect fit</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$20</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro" onclick="window.location.href='product15.html';">
+                <img src="img/product/ba4.jpg" alt="">
+                <div class="des">
+                    <span>Nappa Dori</span>
+                    <h5>Chic, versatile, sustainable women’s handbag</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$11</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <div class="pro"  onclick="window.location.href='product16.html';">
+                <img src="img/product/la1.jpg" alt="">
+                <div class="des">
+                    <span>Artisera</span>
+                    <h5>Elegant pendant light with ambient glow</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$31</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+            <section id="sm-banner" class="section-p1">
+                <div class="banner-box">
+                    <h4>Sustainable Deals</h4>
+                    <h2>Buy 1 & get 1 free</h2>
+                    <span>Ethical Fashion Picks, Style with purpose</span>
+                    <button class="white" id="learnMoreBtn">Learn More</button>
+                </div>
+                <div class="banner-box banner-box2">
+                    <h4>Eco-Savings Await</h4>
+                    <h2>Summer sale: 20% off</h2>
+                    <span>Better for YOU, Better for everyone</span>
+                    <button class="white" id="collectionBtn">Collection</button>
+                </div>
+            </section>
+
+            <section id="banner3">
+                <div class="banner-box">
+                    <h2>Craft with LOVE</h2>
+                    <h3>Style with Purpose: 60% off</h3>
+                </div>
+                <div class="banner-box banner-box2">
+                    <h2>Pure Beauty</h2>
+                    <h3>Starting from Rs.199 only</h3>
+                </div>
+                <div class="banner-box banner-box3">
+                    <h2>Earth's Ellegance</h2>
+                    <h3>Home essentials offer upto 40%</h3>
+                </div>
+            </section>
+
+            <section id="newsletter" class="section-p1 section-m1">
+                <div class="newstext">
+                    <h4>Sign up for Dive into | Ecocean |</h4>
+                    <p>Get E-mail updates about our latest shop and <span>special offers.</span> </p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="your email address">
+                    <button id="newsletterSignUpBtn" class="normal">Sign Up</button>
+                </div>
+            </section>
+
+
+
+            <footer class="section-p1">
+                <div class="col">
+                    <a href="#" class="text-logo">Ec<span>🌍</span>cean</a>
+                    <h4>Contact</h4>
+                    <p><strong>Address:</strong> 123 Green Street,Gurgaon,150315,India</p>
+                    <p><strong>Phone:</strong> +91-124-4567890 / (+91) 01 2345 6789</p>
+                    <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                    <div class="follow">
+                        <h4>Follow Us</h4>
+                        <div class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h4>About</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="col">
+                    <h4>My Account</h4>
+                    <a href="#">Sign In</a>
+                    <a href="#">View Cart</a>
+                    <a href="#">My Wishlist</a>
+                    <a href="#">Track My Order</a>
+                    <a href="#">Help</a>
+                </div>
+                <div class="col install">
+                    <h4>Install App</h4>
+                    <p>From App Store or Google Play</p>
+                    <div class="row">
+                        <img src="img/logo/p2.jpg" alt="">
+                        <img src="img/logo/p3.jpg" alt="">
+                    </div>
+                    <p>Secured Payment Gateways</p>
+                    <img src="img/logo/p1.png" alt="">
+                </div>
+                <div class="copyright">
+                    <p>© 2024, Ecocean. All rights reserved | HTML,CSS,Js |. Crafted with care by NHUB</p>
+                </div>
+            </footer>
+
+
+
+            <script src="script.js"></script>
+</body>
+
+</html>

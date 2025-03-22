@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id="header">
+        <a href="#" class="text-logo">Ec<span>🌍</span>cean</a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="cart-header">
+        
+        <h2>#EcoCart</h2>
+        <p>Fill your cart with care, make green choices everywhere.</p>
+        
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa-regular fa-circle-xmark"></i><a href="#"></a></td>
+                    <td><img src="img/product/je1.jpg" alt=""></td>
+                    <td>Stylish Jeans with a perfect fit</td>
+                    <td>$20.15</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$20.15</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-regular fa-circle-xmark"></i><a href="#"></a></td>
+                    <td><img src="img/product/ba4.jpg" alt=""></td>
+                    <td>Chic,versatile, sustainable women’s handbag</td>
+                    <td>$11.03</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$11.03</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-regular fa-circle-xmark"></i><a href="#"></a></td>
+                    <td><img src="img/product/t5.jpg" alt=""></td>
+                    <td>Viola Short-Sleeve T-shirt</td>
+                    <td>$15.24</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$15.24</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 46.42</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 46.42</strong></td>
+                </tr>
+            </table>
+            <button class="normal" onclick="toggleCheckout()">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <section id="checkout" class="section-p1" style="display: none;">
+        <h3>Billing Details</h3>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Address" required>
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="ZIP Code" required>
+            <h3>Payment Method</h3>
+            <select>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Bank Transfer</option>
+            </select>
+            <input type="text" placeholder="Card Number" required>
+            <input type="text" placeholder="Expiration Date (MM/YY)" required>
+            <input type="text" placeholder="CVV" required>
+            <button class="normal">Complete Payment</button>
+        </form>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <a href="#" class="text-logo">Ec<span>🌍</span>cean</a>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 123 Green Street, Sector 15,Gurgaon, 122001,India</p>
+            <p><strong>Phone:</strong> +91-124-4567890 / (+91) 01 2345 6789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleCheckout() {
+            document.getElementById('checkout').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
